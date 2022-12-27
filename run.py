@@ -1,11 +1,12 @@
-import random
+from random import randint
 
-class GridBoard:
-    def __init__(self, grid):
-        self.board 
+board = []
 
-    def print_board(self):
-        row_number = 1
-        for row in self.board:
-            print(row_number, ".".join(row))
-            row_number +=1
+for x in range(4):
+    board.append([O] * 4)
+
+def print_board(board):
+    for row in board:
+        print " ".join(row)
+
+print_board(board)
